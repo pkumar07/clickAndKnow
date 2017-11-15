@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+    <TextView
+        android:id="@+id/tvFragSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="144dp" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Name"
+        android:textColor="@color/title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvFragSecond"
+        android:layout_alignBottom="@+id/tvFragSecond"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="85dp" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvFragSecond"
+        android:layout_toEndOf="@+id/image">
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Info"
+            android:autoLink="web"
+            android:textColor="@color/title"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+
+</RelativeLayout>
